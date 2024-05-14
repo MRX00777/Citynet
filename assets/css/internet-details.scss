@@ -1,0 +1,733 @@
+.main {
+    margin-top: 81px !important;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1900px;
+}
+
+
+.pages__name {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin-top: 25px;
+
+    &-info {
+        color: #FFF;
+        font-family: "SF Pro Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+
+        &:last-of-type {
+            color: #777A9A;
+            font-family: "SF Pro Display";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
+    }
+
+    &-slash {
+        color: #FFF;
+        font-family: "SF Pro Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    }
+}
+
+.tarif-name {
+    color: #FFF;
+    font-family: "TT Firs Neue";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 40px 0 30px;
+}
+
+
+.options {
+
+
+    &__left {
+        max-width: 100%;
+        border-radius: 20px;
+        border: 1px solid rgb(235, 228, 228);
+        background: linear-gradient(271deg, rgba(9, 13, 43, 0.30) 11.52%, rgba(85, 99, 153, 0.30) 76.1%), rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(5px);
+        padding: 30px 30px 10px 30px;
+
+        &-title {
+            color: #FFF;
+            font-family: "TT Firs Neue";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px rgba(255, 255, 255, 0.15) solid;
+            padding: 22px 0px;
+
+            color: #FFF;
+            font-family: "TT Firs Neue";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 24px */
+            text-transform: uppercase;
+        }
+    }
+
+    &__right {
+        padding: 30px;
+        width: 100%;
+        border-radius: 20px;
+        background: linear-gradient(85deg, #136BFF -18.08%, #00BCFF 90.14%);
+        box-shadow: 0px 0px 9.8px 0px rgba(0, 188, 255, 0.50);
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        min-width: 360px;
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+
+            &-text {
+                color: #FFF;
+                font-family: "TT Firs Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                text-transform: uppercase;
+            }
+
+            &-number {
+                color: #FFF;
+                font-family: "TT Firs Neue";
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        &__btn {
+            padding: 15px 20px;
+            width: 100%;
+            color: #FFF;
+            border-radius: 100px;
+            background: linear-gradient(85deg, #FFA723 -18.08%, #F1950B 90.14%);
+            box-shadow: 0px 0px 9.8px 0px #FFA723;
+            text-align: center;
+            font-family: "TT Firs Neue";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            transition: 300ms;
+
+            &:hover {
+                color: black;
+                background: white;
+                box-shadow: 0px 0px 9.8px 0px #f1f1f0;
+            }
+        }
+    }
+}
+
+.conditions {
+    padding: 30px 30px 10px 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(235, 228, 228);
+    background: linear-gradient(271deg, rgba(9, 13, 43, 0.30) 11.52%, rgba(85, 99, 153, 0.30) 76.1%), rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(5px);
+    margin-top: 30px;
+
+    &-title {
+        color: #FFF;
+        font-family: "TT Firs Neue";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &__btn {
+            padding: 21px 0 21px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            color: #FFF;
+            font-family: "TT Firs Neue";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 21px */
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &-text {
+                color: #FFF;
+                font-family: "TT Firs Neue";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                text-transform: uppercase;
+                text-align: left;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+                max-width: 24px;
+                min-width: 24px;
+                max-height: 24px;
+                min-height: 24px;
+                display: block;
+                margin-left: 20px;
+            }
+        }
+
+        &__content {
+            color: rgba(239, 239, 239, 0.93);
+            font-family: "SF Pro Display";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            margin-bottom: 20px;
+            display: none;
+        }
+    }
+}
+
+.advantages {
+    margin-top: 60px;
+
+    &-title {
+        color: #FFF;
+        text-align: center;
+        font-family: "TT Firs Neue";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    &__cards {
+        margin-top: 40px;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            &-img {
+                width: 100%;
+                height: 190px;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 190px;
+                max-height: 190px;
+                border-radius: 20px;
+                display: block;
+
+                img {
+                    width: 100%;
+                    height: 190px;
+                    min-width: 100%;
+                    max-width: 100%;
+                    min-height: 190px;
+                    max-height: 190px;
+                    border-radius: 20px;
+                }
+            }
+
+            &-title {
+                color: #FFF;
+                text-align: center;
+                font-family: "TT Firs Neue";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+
+            &-text {
+                color: rgba(239, 239, 239, 0.93);
+                text-align: center;
+                font-family: "SF Pro Display";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+    .options__left {
+        margin-bottom: 30px;
+    }
+
+    .options__right {
+        align-items: center;
+        gap: 23px;
+        min-width: 100%;
+    }
+
+    .options__right__price {
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .pages__name {
+        display: none !important;
+    }
+
+    .tarif-name {
+        font-size: 34px;
+    }
+
+    .options__left__item {
+        font-size: 15px;
+    }
+
+    .conditions__item__btn-text {
+        font-size: 15px;
+    }
+
+    .conditions__item__content {
+        font-size: 15px;
+    }
+
+    .advantages__cards__card-text {
+        font-size: 15px;
+    }
+
+    .advantages__cards {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .tarif-name {
+        font-size: 30px;
+    }
+
+    .options__left__item {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+
+    .conditions__item__btn-text {
+        font-size: 14px;
+    }
+
+    .conditions__item__content {
+        font-size: 14px;
+    }
+
+    .advantages__cards__card-text {
+        font-size: 14px;
+    }
+
+    .options__left {
+        padding: 25px 25px 10px 25px;
+    }
+
+    .conditions {
+        padding: 25px 25px 10px 25px;
+    }
+
+    .conditions__item__btn {
+        padding: 17px 0 17px 0;
+    }
+
+    .advantages {
+        margin-top: 50px;
+    }
+
+    .advantages__cards {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .tarif-name {
+        font-size: 28px;
+    }
+
+    .advantages-title{
+        font-size: 28px ;
+    }
+
+    .options__left-title {
+        font-size: 22px;
+    }
+
+    .conditions-title {
+        font-size: 22px;
+    }
+
+    .options__right__price-number {
+        font-size: 32px;
+    }
+
+    .conditions__item__btn img {
+        width: 22px;
+        height: 22px;
+        max-width: 22px;
+        min-width: 22px;
+        max-height: 22px;
+        min-height: 22px;
+    }
+}
+
+@media (max-width: 620px) {
+    .tarif-name {
+        font-size: 26px;
+        margin: 40px 0 25px;
+    }
+
+    .advantages-title{
+        font-size: 26px ;
+    }
+
+    .options__left-title {
+        font-size: 20px;
+    }
+
+    .conditions-title {
+        font-size: 20px;
+    }
+
+    .options__left__item {
+        font-size: 13px;
+        padding: 15px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .conditions__item__btn {
+        font-size: 13px;
+        padding: 16px 0 16px 0;
+    }
+
+    .conditions__item__btn-text {
+        font-size: 13px;
+    }
+
+    .options__left {
+        padding: 20px 20px 8px 20px;
+    }
+
+    .conditions {
+        padding: 20px 20px 8px 20px;
+    }
+
+    .options__right__price-text {
+        font-size: 15px;
+    }
+
+    .options__right__price-number {
+        font-size: 30px;
+    }
+
+    .options__right {
+        gap: 20px;
+    }
+
+    .options__right {
+        padding: 25px;
+    }
+
+    .conditions__item__btn img {
+        width: 20px;
+        height: 20px;
+        max-width: 20px;
+        min-width: 20px;
+        max-height: 20px;
+        min-height: 20px;
+    }
+
+    .conditions__item__content {
+        margin-bottom: 17px;
+    }
+
+    .advantages__cards__card-title {
+        font-size: 22px;
+        margin-bottom: 13px;
+        margin-top: 18px;
+    }
+
+    .advantages {
+        margin-top: 45px;
+    }
+
+    .advantages__cards {
+        margin-top: 25px;
+    }
+
+}
+
+@media (max-width: 574px) {
+    .main {
+        margin-top: 71px !important;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .tarif-name {
+        font-size: 24px;
+        margin: 30px 0 20px;
+    }
+
+    .advantages-title{
+        font-size: 24px ;
+    }
+
+    .options__left-title {
+        font-size: 18px;
+    }
+
+    .conditions-title {
+        font-size: 18px;
+    }
+
+    .options__left__item {
+        font-size: 12px;
+        padding: 13px 0;
+    }
+
+    .conditions__item__btn-text {
+        font-size: 12px;
+    }
+
+    .options__left {
+        padding: 15px 15px 8px 15px;
+        margin-bottom: 25px;
+    }
+
+    .conditions {
+        padding: 20px 15px 6px 15px;
+    }
+
+    .options__right__price-text {
+        font-size: 14px;
+    }
+
+    .options__right__price-number {
+        font-size: 27px;
+    }
+
+    .options__right {
+        padding: 20px;
+    }
+
+    .conditions__item__btn {
+        font-size: 12px;
+        padding: 15px 0 15px 0;
+    }
+
+    .conditions__item__btn img {
+        width: 18px;
+        height: 18px;
+        max-width: 18px;
+        min-width: 18px;
+        max-height: 18px;
+        min-height: 18px;
+    }
+
+    .conditions__item__content {
+        margin-bottom: 14px;
+    }
+
+    .advantages__cards__card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .advantages__cards__card-img {
+        width: 100%;
+        height: 170px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height:  170px;
+        max-height:  170px;
+        border-radius: 20px;
+        display: block;
+
+        img {
+            width: 100%;
+            height:  170px;
+            min-width: 100%;
+            max-width: 100%;
+            min-height:  170px;
+            max-height:  170px;
+            border-radius: 20px;
+        }
+    }
+
+    .advantages__cards__card{
+        margin-bottom: 25px;
+    }
+
+    .advantages {
+        margin-top: 40px;
+    }
+
+    .advantages__cards {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .tarif-name {
+        font-size: 20px;
+    }
+
+    .advantages-title{
+        font-size: 20px ;
+    }
+
+    .options__left-title {
+        font-size: 16px;
+    }
+
+    .conditions-title {
+        font-size: 16px;
+    }
+
+    .options__left__item {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .options__right__price-text {
+        font-size: 13px;
+    }
+
+    .options__right__price-number {
+        font-size: 24px;
+    }
+
+    .options__right {
+        padding: 15px;
+    }
+
+    .conditions__item__btn img {
+        width: 16px;
+        height: 16px;
+        max-width: 16px;
+        min-width: 16px;
+        max-height: 16px;
+        min-height: 16px;
+    }
+
+    .advantages__cards__card-title {
+        font-size: 19px;
+        margin-bottom: 8px;
+        margin-top: 13px;
+    }
+
+    .advantages__cards__card-img {
+        width: 100%;
+        height: 160px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height:  160px;
+        max-height:  160px;
+        border-radius: 20px;
+        display: block;
+
+        img {
+            width: 100%;
+            height:  160px;
+            min-width: 100%;
+            max-width: 100%;
+            min-height:  160px;
+            max-height:  160px;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .advantages__cards__card-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .advantages__cards__card-img {
+        width: 100%;
+        height: 150px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+        max-height: 150px;
+        border-radius: 20px;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 150px;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 150px;
+            max-height: 150px;
+            border-radius: 20px;
+        }
+    }
+}

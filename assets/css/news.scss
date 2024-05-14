@@ -1,0 +1,204 @@
+.main {
+    margin-top: 81px !important;
+    padding-bottom: 30px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1900px;
+}
+
+.block {
+    display: none !important;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.pages__name {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin-top: 25px;
+
+    &-left {
+        color: #FFF;
+        font-family: "SF Pro Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    }
+
+    &-right {
+        color: #777A9A;
+        font-family: "SF Pro Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    }
+
+    &-slash {
+        color: #FFF;
+        font-family: "SF Pro Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    }
+}
+
+
+
+.news {
+
+    &__cards{
+        margin-bottom: 0 !important;
+    }
+
+    &__paginations {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        &-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            border: 1px solid #666C85;
+            transition: 300ms;
+
+            &:hover {
+                border: 1px transparent solid;
+                background: linear-gradient(85deg, #136BFF -18.08%, #00BCFF 90.14%);
+                box-shadow: 0px 0px 9.8px 0px rgba(0, 188, 255, 0.50);
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            border: 1px solid #666C85;
+
+            color: #FFF;
+            text-align: center;
+            font-family: "SF Pro Display";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: 300ms;
+
+            &:hover {
+                border: 1px transparent solid;
+                background: linear-gradient(85deg, #136BFF -18.08%, #00BCFF 90.14%);
+                box-shadow: 0px 0px 9.8px 0px rgba(0, 188, 255, 0.50);
+            }
+        }
+
+        &-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            border: 1px solid #666C85;
+            transition: 300ms;
+
+            &:hover {
+                border: 1px transparent solid;
+                background: linear-gradient(85deg, #136BFF -18.08%, #00BCFF 90.14%);
+                box-shadow: 0px 0px 9.8px 0px rgba(0, 188, 255, 0.50);
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.mySwiper {
+    width: max-content;
+    max-width: 190px !important;
+}
+
+.swiper-slide {
+    width: 50px !important;
+    height: 50px;
+}
+
+
+@media (max-width: 800px) {
+    .pages__name {
+        display: none !important;
+        z-index: -999 !important;
+        width: 0 !important;
+        height: 0 !important;
+        opacity: 0 !important;
+    }
+
+    .swiper-slide {
+        width: 44px !important;
+        height: 44px;
+    }
+
+    .news__paginations-left {
+        width: 44px;
+        height: 44px;
+        border-radius: 15px;
+    }
+
+    .news__paginations-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 15px;
+    }
+
+    .news__paginations-right {
+        width: 44px;
+        height: 44px;
+        border-radius: 15px;
+    }
+
+    .mySwiper {
+        width: max-content;
+        max-width: 165px !important;
+    }
+
+    .news{
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 574px) {
+    .main {
+        margin-top: 71px !important;
+        padding-bottom: 50px;
+    }
+}

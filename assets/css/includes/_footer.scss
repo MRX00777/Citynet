@@ -1,0 +1,477 @@
+.footer {
+    border-radius: 15px 15px 0px 0px;
+    background: #2A2F63;
+    padding: 38px 0 15px !important;
+    transition: 300ms !important;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+
+        .footer__nav {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+
+        .footer__contacts {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+
+            &__support {
+                display: flex;
+                flex-direction: column;
+
+                &-text {
+                    color: #FFF;
+                    font-family: "TT Firs Neue";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                }
+
+                &-number {
+                    color: #FFF;
+                    font-family: "TT Firs Neue";
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin: 13px 0 5px;
+                    transition: 300ms;
+
+                    &:hover{
+                        color: #00BCFF;
+                    }
+
+                }
+
+                &-email {
+                    color: #FFF;
+                    font-family: "SF Pro Display";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    transition: 300ms;
+
+                    &:hover{
+                        color: #00BCFF;
+                    }
+                }
+            }
+
+            .footer__social {
+                display: flex;
+                flex-direction: column;
+
+                &-text {
+                    color: #FFF;
+                    font-family: "TT Firs Neue";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                }
+
+                &__list {
+                    display: flex;
+                    gap: 25px;
+
+                    &-link {
+                        background: #161A46;
+                        width: 50.499px;
+                        height: 50.499px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        transition: 300ms;
+                        margin-top: 13px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        &:hover {
+                            background: linear-gradient(85deg, #136BFF -18.08%, #00BCFF 90.14%);
+                            filter: drop-shadow(0px 0px 9.8px rgba(0, 188, 255, 0.50));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        border-radius: 15px;
+        background: #161A46;
+        padding: 40px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            text-align: left;
+            width: 30%;
+
+            &-title {
+                color: #FFF;
+                font-family: "TT Firs Neue";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-info {
+                color: #E3E3E7;
+                font-family: "SF Pro Display";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+
+        &__form {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 30px;
+            width: 70%;
+
+            .input__name {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 323px;
+
+                p {
+                    color: #FFF;
+                    font-family: "SF Pro Display";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                }
+
+                &__item {
+                    padding: 19px 21px;
+                    font-family: "SF Pro Display";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                    color: var(--black-new, #1B1B1B);
+                    border-radius: 100px;
+                    border: 1px solid white;
+                    outline: none;
+                    transition: 300ms;
+
+                    &:hover {
+                        border: 1px solid #00BCFF;
+                    }
+
+                    &:active {
+                        border: 1px solid #00BCFF;
+                    }
+
+                    &:focus {
+                        border: 1px solid #00BCFF;
+                    }
+                }
+
+            }
+
+            .input__tel {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 323px;
+
+                p {
+                    color: #FFF;
+                    font-family: "SF Pro Display";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                }
+
+                input {
+                    color: var(--black-new, #1B1B1B);
+                    font-family: "SF Pro Display";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                    outline: none;
+                    border: 1px white solid;
+
+                    &:hover {
+                        border: 1px solid #00BCFF;
+                    }
+
+                    &:active {
+                        border: 1px solid #00BCFF;
+                    }
+
+                    &:focus {
+                        border: 1px solid #00BCFF;
+                    }
+
+                    .telCountry {
+                        color: var(--black-new, #1B1B1B);
+                    }
+                }
+            }
+
+            .input__button {
+                width: 173px;
+                border-radius: 100px;
+                background: linear-gradient(85deg, #136BFF -18.08%, #00BCFF 90.14%);
+                box-shadow: 0px 0px 9.8px 0px rgba(0, 188, 255, 0.50);
+                padding: 16px 46px;
+                height: 50px;
+                margin-bottom: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 300ms;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--grad, linear-gradient(85deg, #FFA723 -18.08%, #F1950B 90.14%));
+                    box-shadow: 0px 0px 9.8px 0px rgba(255, 167, 35, 0.50);
+                }
+
+
+                &-item {
+                    color: #FFF !important;
+                    font-family: "TT Firs Neue";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+    }
+}
+
+.made-in-kirano {
+    color: #8894A2;
+    font-family: "SF Pro Display";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+	display: block;
+	text-align: center;
+	margin-top: 19px;
+    cursor: pointer;
+}
+/* 
+.header__item_inner_link:last-of-type.nav__link-btn--active{
+	
+		&::after{
+			width: auto;
+			height: auto;
+			opacity: 1 !important;
+		}
+
+} */
+
+
+@media (max-width: 1140px) {
+    .footer__bottom {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__form {
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .input__name {
+                width: 100%;
+            }
+
+            .input__tel {
+                width: 100%;
+            }
+
+            .input__button {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer__top {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+
+        .footer__nav {
+            width: 80%;
+            justify-content: space-between;
+        }
+
+        .footer__contacts {
+            width: 60%;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footer__top .footer__nav {
+        width: 90%;
+    }
+
+    .footer__top .footer__contacts {
+        width: 80%;
+    }
+
+    .footer__bottom {
+        padding: 30px 30px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .footer__top .footer__nav {
+        width: 100%;
+        row-gap: 20px;
+        column-gap: 55px;
+        flex-wrap: wrap;
+    }
+
+    .footer__top .footer__contacts {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        &__support {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer__social {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .footer {
+        padding: 25px 0 20px 0;
+    }
+
+    .footer__bottom {
+        padding: 25px 20px;
+    }
+
+    .footer__bottom__text-title {
+        font-size: 26px;
+    }
+
+    .footer__bottom__text-info {
+        font-size: 15px;
+    }
+
+    .footer__top {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer__top .footer__contacts .footer__social__list-link {
+        width: 44px;
+        height: 44px;
+    }
+
+    .footer__top .footer__contacts .footer__social__list-link img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .footer__top .footer__nav {
+        column-gap: 35px;
+    }
+
+    .footer__top {
+        gap: 25px;
+    }
+
+    .footer__bottom {
+        padding: 20px 15px;
+    }
+
+    .footer__bottom__text-title {
+        font-size: 20px;
+    }
+
+    .footer__bottom__text-info {
+        font-size: 13px;
+    }
+
+    .footer__bottom__form .input__name p {
+        font-size: 14px;
+    }
+
+    .footer__bottom__form .input__tel p {
+        font-size: 14px;
+    }
+
+    .footer__bottom__text {
+        gap: 10px;
+    }
+
+    .iti--separate-dial-code .iti__selected-dial-code {
+        font-size: 15px;
+    }
+
+    .footer__bottom__form {
+        gap: 25px;
+    }
+
+    .footer__top {
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (max-width: 400px) {}
